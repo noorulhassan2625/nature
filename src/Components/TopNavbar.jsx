@@ -27,7 +27,7 @@ function TopNavbar() {
                   className={({ isActive }) => 
                     isActive ? "mx-5 text-white bg-[#EE1E46] mt-4 px-4 py-2 rounded-[5px]" : 
                                "mx-5 border-b-2 border-[#EE1E46] text-white bg-[#4E1624] mt-4 px-4 py-2"
-                  }>Desets</NavLink>
+                  }>Deserts</NavLink>
               </li>
               <li>
                 <NavLink 
