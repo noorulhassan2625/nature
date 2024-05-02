@@ -37,41 +37,41 @@ const imageData = [
   {
     title: "Deserts",
     images: [
-      { url: starImage1, type: "Desert 1" },
-      { url: starImage2, type: "Desert 2" },
-      { url: starImage3, type: "Desert 3" },
-      { url: treeImage1, type: "Desert 4" },
-      { url: treeImage2, type: "Desert 5" },
-      { url: treeImage3, type: "Desert 6" },
+      { url: starImage1, type: "Desert" },
+      { url: starImage2, type: "Desert" },
+      { url: starImage3, type: "Desert" },
+      { url: treeImage1, type: "Desert" },
+      { url: treeImage2, type: "Desert" },
+      { url: treeImage3, type: "Desert" },
     ],
-    description: " Deserts, characterized by their extreme temperature fluctuations, cover about one-fifth of the Earth's surface.",
-    link: "/stars-and-trees",
+    // description: " Deserts, characterized by their extreme temperature fluctuations, cover about one-fifth of the Earth's surface.",
+    link: "/deserts",
   },
   {
     title: "Oceans",
     images: [
-      { url: natureWalk6, type: "Oceans 1" },
-      { url: natureWalk5, type: "Oceans 2" },
-      { url: natureWalk4, type: "Oceans 3" },
-      { url: natureWalk3, type: "Oceans 4" },
-      { url: natureWalk2, type: "Oceans 5" },
-      { url: natureWalk1, type: "Oceans 6" }
+      { url: natureWalk6, type: "Oceans" },
+      { url: natureWalk5, type: "Oceans" },
+      { url: natureWalk4, type: "Oceans" },
+      { url: natureWalk3, type: "Oceans" },
+      { url: natureWalk2, type: "Oceans" },
+      { url: natureWalk1, type: "Oceans" }
     ],
-    description: "Dive into the mysterious depths of the world’s oceans, which cover more than 70% of our planet's surface",
-    link: "/walk-with-nature",
+    // description: "Dive into the mysterious depths of the world’s oceans, which cover more than 70% of our planet's surface",
+    link: "/oceans",
   },
   {
     title: "Greenlands",
     images: [
-      { url: beautynature1, type: "Greenlands 1" },
-      { url: beautyNature2, type: "Greenlands 2" },
-      { url: beautyNature3, type: "Greenlands 3" },
-      { url: beautyNature4, type: "Greenlands 4" },
-      { url: beautyNature5, type: "Greenlands 5" },
-      { url: beautyNature6, type: "Greenlands 6" },
+      { url: beautynature1, type: "Greenlands" },
+      { url: beautyNature2, type: "Greenlands" },
+      { url: beautyNature3, type: "Greenlands" },
+      { url: beautyNature4, type: "Greenlands" },
+      { url: beautyNature5, type: "Greenlands" },
+      { url: beautyNature6, type: "Greenlands" },
     ],
-    description: "Discover the verdant splendor of Green Lands, where lush forests and fertile plains breathe life into our planet.",
-    link: "/beauty-of-nature-speaks",
+    // description: "Discover the verdant splendor of Green Lands, where lush forests and fertile plains breathe life into our planet.",
+    link: "/greenlands",
   },
 ];
 
@@ -81,11 +81,11 @@ function Routes() {
       {/* <Routes> */}
       <Route path="/" element={<Homepage data={imageData} />} />
       <Route
-        path="/stars-and-trees"
+        path="/deserts"
         element={<StarsAndTrees data={imageData[0]} />}
       />
-      <Route path="/walk-with-nature" element={<WalkWithNature data={imageData[1]} />} />
-            <Route path="/beauty-of-nature-speaks" element={<BeautyOfNatureSpeaks data={imageData[2]} />} />
+      <Route path="/oceans" element={<WalkWithNature data={imageData[1]} />} />
+            <Route path="/greenlands" element={<BeautyOfNatureSpeaks data={imageData[2]} />} />
       {/* </Routes> */}
     </Switch>
   );
