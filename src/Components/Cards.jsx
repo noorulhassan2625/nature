@@ -15,7 +15,7 @@ function Card({ title, imageUrl, description, link }) {
         <div className="container">
           <h4 className='mt-2'><b>{title}</b></h4>
           <p className='mb-4'>{description}</p>
-          {isHomePage && <Link className='border-b-2 border-[#EE1E46] text-white bg-[#4E1624]  px-2 py-1' to={link}>Explore More</Link>}
+          {isHomePage && <Link className='border-b-2 border-[#6BB4B4] text-white bg-[#075c5c]  px-2 py-1' to={link}>Explore More</Link>}
         </div>
         </div>
       </div>
